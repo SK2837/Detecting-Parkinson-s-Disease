@@ -18,10 +18,10 @@ In this Python machine learning project, we use the libraries scikit-learn, nump
 ## Dataset
 You will need the UCI ML Parkinson's dataset for this project. The dataset includes 24 columns and 195 records and is only 39.7 KB. You can download it from the UCI Machine Learning Repository or use the provided data file "parkinsons.data".
 
-##Steps for Detecting Parkinson’s Disease 
 
-Steps for Detecting Parkinson’s Disease with XGBoost
-## Extract features and labels from the DataFrame
+
+## Steps for Detecting Parkinson’s Disease with XGBoost
+###Extract features and labels from the DataFrame
 - Features: All columns except status
 - Labels: Values in the status column (0 or 1)
 - The dataset has 147 ones and 48 zeros in the status column
@@ -33,7 +33,7 @@ Steps for Detecting Parkinson’s Disease with XGBoost
 - Generate y_pred (predicted values for x_test) and calculate the model's accuracy
 - Print out the accuracy of the model
 
-## Model Building
+### Model Building
 We built and evaluated several machine learning models to detect Parkinson's Disease. The following steps were taken:
 
 - Data Resampling: Using RandomOverSampler from the imblearn library to handle class imbalance.
@@ -47,6 +47,16 @@ We built and evaluated several machine learning models to detect Parkinson's Dis
    - K-Nearest Neighbors (KNN)
    - Gaussian Naive Bayes
    -  Bernoulli Naive Bayes
+# Best Model Selection
+
+The best models based on accuracy were:
+
+- RandomForest Gini: 98.31%
+- RandomForest Entropy: 98.31%
+- We chose the RandomForest Classifier with Gini Index as our final model due to its high accuracy and robustness.
+
+
+
 
 
 
