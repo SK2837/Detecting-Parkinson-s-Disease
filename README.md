@@ -21,7 +21,7 @@ You will need the UCI ML Parkinson's dataset for this project. The dataset inclu
 ##Steps for Detecting Parkinson’s Disease 
 
 Steps for Detecting Parkinson’s Disease with XGBoost
-### Extract features and labels from the DataFrame
+## Extract features and labels from the DataFrame
 - Features: All columns except status
 - Labels: Values in the status column (0 or 1)
 - The dataset has 147 ones and 48 zeros in the status column
